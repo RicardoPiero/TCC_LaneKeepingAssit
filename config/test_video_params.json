@@ -1,0 +1,54 @@
+{
+    "roi": {
+        "top_left": [
+            0,
+            286
+        ],
+        "top_right": [
+            848,
+            286
+        ],
+        "bottom_left": [
+            0,
+            478
+        ],
+        "bottom_right": [
+            848,
+            478
+        ]
+    },
+    "bev": {
+        "width": 480,
+        "height": 600
+    },
+    "clahe": {
+        "clip_limit": 2.0,
+        "grid_size": 8
+    },
+    "hsv": {
+        "h_range": [
+            15,
+            35
+        ],
+        "s_range": [
+            80,
+            255
+        ],
+        "v_range": [
+            150,
+            255
+        ]
+    },
+    "morphology": {
+        "kernel_size": 5,
+        "iterations": 1
+    },
+    "hough": {
+        "threshold": 30,
+        "min_line_length": 40,
+        "max_line_gap": 100
+    },
+    "temporal": {
+        "window": 10
+    }
+}

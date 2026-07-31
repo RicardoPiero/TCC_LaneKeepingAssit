@@ -1,0 +1,54 @@
+{
+    "roi": {
+        "top_left": [
+            0,
+            648
+        ],
+        "top_right": [
+            1920,
+            648
+        ],
+        "bottom_left": [
+            0,
+            1080
+        ],
+        "bottom_right": [
+            1920,
+            1080
+        ]
+    },
+    "bev": {
+        "width": 400,
+        "height": 600
+    },
+    "clahe": {
+        "clip_limit": 2.0,
+        "grid_size": 8
+    },
+    "hsv": {
+        "h_range": [
+            15,
+            35
+        ],
+        "s_range": [
+            80,
+            255
+        ],
+        "v_range": [
+            150,
+            255
+        ]
+    },
+    "morphology": {
+        "kernel_size": 5,
+        "iterations": 1
+    },
+    "hough": {
+        "threshold": 30,
+        "min_line_length": 40,
+        "max_line_gap": 100
+    },
+    "temporal": {
+        "window": 10
+    }
+}
