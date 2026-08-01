@@ -1,12 +1,3 @@
-"""Selecao da trajetoria-alvo do LKAS.
-
-As lanes reais esquerda/direita sao limites detectados da pista.
-O controlador pode seguir um de tres setpoints:
-- left: pseudo-lane deslocada para dentro a partir da lane esquerda;
-- center: centro geometrico entre as duas lanes reais;
-- right: pseudo-lane deslocada para dentro a partir da lane direita.
-"""
-
 import numpy as np
 
 
