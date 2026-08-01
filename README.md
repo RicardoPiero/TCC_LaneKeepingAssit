@@ -62,3 +62,7 @@ python main.py --video video_02  --pseudo-left-offset 20  --pseudo-right-offset 
 
 python main.py --video-path data/raw/video_04.mp4 --config config/test_video_params.json --target center --roi-top-left 0 220 --roi-top-right 848 220 --roi-bottom-left 0 360 --roi-bottom-right 848 360 --display-delay 1
 
+## Câmera em tempo real
+
+python camera_main.py --camera-index 0 --config config/test_video_params.json --target center --camera-width 848 --camera-height 478 --camera-fps 30 --roi-top-left 0 220 --roi-top-right 848 220 --roi-bottom-left 0 360 --roi-bottom-right 848 360 --display-delay 1
+
