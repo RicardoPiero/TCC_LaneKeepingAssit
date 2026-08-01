@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-"""Aplica o controlador contínuo aos datasets CSV do LKAS.
-
-Este script não executa novamente o SegFormer. Ele usa as posições de lane e o
-erro lateral já exportados para simular e calibrar o comando de direção.
-"""
-
 from __future__ import annotations
 
 import argparse
