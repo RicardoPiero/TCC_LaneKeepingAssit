@@ -1,14 +1,3 @@
-"""Controlador contínuo de direção para o LKAS.
-
-Convenção de sinais do projeto:
-- steering > 0: correção para a esquerda;
-- steering < 0: correção para a direita;
-- steering = 0: manter direção.
-
-O erro lateral recebido segue a mesma convenção:
-    error_px = vehicle_center_x - target_x
-"""
-
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -29,19 +18,6 @@ class SteeringResult:
 
 
 class ProportionalSteeringController:
-    """Controlador P normalizado, suavizado e limitado por frame.
-
-    A normalização usa metade da largura estimada da pista:
-        error_normalized = error_px / (lane_width_px / 2)
-
-    Depois são aplicados:
-    1. zona morta em pixels;
-    2. ganho proporcional ``kp``;
-    3. saturação em ``[-max_output, +max_output]``;
-    4. filtro exponencial;
-    5. limite de variação por frame.
-    """
-
     def __init__(
         self,
         kp: float = 0.8,
