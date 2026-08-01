@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-"""Entrada do LKAS para câmera conectada em tempo real.
-
-Este arquivo adapta a câmera para o runtime já validado em vídeos, sem alterar o
-pipeline principal. Todos os parâmetros normais do ``main.py`` continuam
- disponíveis, além dos parâmetros específicos da câmera.
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -20,8 +12,6 @@ from segformer_runtime import pipeline_control as runtime
 
 
 class _CameraPath:
-    """Representa a fonte virtual da câmera nas verificações de caminho."""
-
     def __init__(self, value: str) -> None:
         self.value = value
         index = value.split("://", 1)[1]
@@ -39,8 +29,6 @@ class _CameraPath:
 
 
 class _CameraCapture:
-    """Wrapper do OpenCV que fornece contador e timestamp para a câmera."""
-
     def __init__(
         self,
         original_video_capture,
@@ -132,8 +120,6 @@ def main() -> None:
             )
         return original_video_capture(source)
 
-    # O pipeline importou Path e cv2 diretamente; as adaptações abaixo valem
-    # somente durante esta execução e não modificam o runtime de arquivos.
     runtime.Path = camera_aware_path
     runtime.cv2.VideoCapture = camera_aware_capture
 
