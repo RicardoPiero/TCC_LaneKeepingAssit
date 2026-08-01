@@ -1,5 +1,3 @@
-"""Visualizacao das lanes reais e dos setpoints do LKAS."""
-
 import cv2
 import numpy as np
 
