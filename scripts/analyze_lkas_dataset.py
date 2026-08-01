@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-"""Analisa os CSVs de execucao do LKAS.
-
-O script nao executa novamente o SegFormer. Ele usa as saidas ja exportadas
-pelo runtime para medir disponibilidade, erro lateral, estabilidade temporal,
-geometria da pista e desempenho computacional.
-"""
-
 from __future__ import annotations
 
 import argparse
