@@ -1,5 +1,3 @@
-"""Geometria v3, tracking temporal e pseudo-lanes para o LKA SegFormer."""
-
 from collections import deque
 from dataclasses import dataclass
 import time
