@@ -60,3 +60,5 @@ Faixas de controle:
 
 python main.py --video video_02  --pseudo-left-offset 20  --pseudo-right-offset 30 --target left
 
+python main.py --video-path data/raw/video_04.mp4 --config config/test_video_params.json --target center --roi-top-left 0 220 --roi-top-right 848 220 --roi-bottom-left 0 360 --roi-bottom-right 848 360 --display-delay 1
+
