@@ -1,5 +1,3 @@
-"""Runtime enxuto do LKAS usando apenas SegFormer-B0."""
-
 import argparse
 import csv
 import json
