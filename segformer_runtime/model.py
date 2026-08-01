@@ -1,5 +1,3 @@
-"""Carga e inferencia do SegFormer-B0 para o runtime do LKA."""
-
 import cv2
 import numpy as np
 import torch
