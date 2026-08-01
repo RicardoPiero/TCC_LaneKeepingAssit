@@ -1,5 +1,3 @@
-"""Runtime do LKAS com SegFormer-B0 e controlador continuo integrado."""
-
 from __future__ import annotations
 
 import argparse
